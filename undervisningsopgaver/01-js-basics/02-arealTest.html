@@ -12,7 +12,15 @@
         const lenght = 3;
         const width = 5;
         const area = width * lenght;
-        window.onload(console.log(area))
+        console.log(area);
+
+        if (area < 100) {
+            console.log("Arealet er for lille");
+        } else if (area > 100 && area < 200) {
+            console.log("Arealet er ok");
+        } else if (area > 200) {
+            console.log("Arealet er for stort");
+        }
 
     </script>
 </body>
