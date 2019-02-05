@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+
+<body>
+	<script>
+		const height = prompt("Angiv din højde");
+		const weight = prompt("Angiv din vægt");
+		const bmi = weight / (height * height);
+
+		function thebmi(h, w) {
+			let b = (w / (h * h));
+			if (b == 0) {
+				return (Fejl. Prøv igen);
+			} else if (isNaN(b)) {
+				return (Fejl. Prøv igen med tal);
+			} else {
+				return (Din BMI er ${b}. Vil du vide din vægtklasse?);
+			}
+		}
+
+		let visResultat = thebmi(height, weight);
+
+		if (confirm(visResultat)) {
+			if (bmi <= 0.0019) {
+				let txt = "Din fedmeklasse ligger på undervægtig.";
+				alert(txt);
+			} else if (bmi >= 0.0020 && bmi <= 0.0025) {
+				let txt = "Din fedmeklasse ligger på normal.";
+				alert(txt);
+			} else if (bmi >= 0.0025 && bmi <= 0.0030) {
+				let txt = "Din fedmeklasse ligger på overvægtig.";
+				alert(txt);
+			} else if (bmi >= 0.0030 && bmi <= 0.0035) {
+				let txt = "Din fedmeklasse ligger på fed.";
+				alert(txt);
+			} else if (bmi >= 0.0035 && bmi <= 0.0040) {
+				let txt = "Din fedmeklasse ligger på svær fedme.";
+				alert(txt);
+			} else if (bmi >= 0.0040) {
+				let txt = "Din fedmeklasse ligger på ekstrem fed.";
+				alert(txt);
+			}
+		} else {
+			location.reload();
+		}
+	</script>
+</body>
+
+</html>
