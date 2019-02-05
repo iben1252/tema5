@@ -9,6 +9,21 @@
 
 <body>
     <script>
+        var time = new Date().getHours();
+
+        if (time >= 5 && time <= 10) {
+            let txt = "Godmorgen!";
+            window.alert(txt);
+        } else if (time >= 10 && time <= 18) {
+            let txt = "Goddag!";
+            window.alert(txt);
+        } else if (time >= 18 && time <= 0) {
+            let txt = "Godaften!";
+            window.alert(txt);
+        } else if (time >= 0 && time <= 5) {
+            let txt = "Godnat!";
+            window.alert(txt);
+        }
 
     </script>
 </body>
