@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+
+<body>
+	<script>
+		const height = 200;
+		const weight = 108;
+		const bmi = weight / (height * height);
+		window.console.log(bmi);
+
+		if (bmi <= 0.0019) {
+			let txt = "Din fedmeklasse ligger på Undervægtig. Din BMI'en er " + bmi;
+			window.console.log(txt);
+		} else if (bmi >= 0.0020 && bmi <= 0.0025) {
+			let txt = "Din fedmeklasse ligger på Normal. Din BMI'en er " + bmi;
+			window.console.log(txt);
+		} else if (bmi >= 0.0025 && bmi <= 0.0030) {
+			let txt = "Din fedmeklasse ligger på Overvægtig. Din BMI'en er " + bmi;
+			window.console.log(txt);
+		} else if (bmi >= 0.0030 && bmi <= 0.0035) {
+			let txt = "Din fedmeklasse ligger på Fed. Din BMI'en er " + bmi;
+			window.console.log(txt);
+		} else if (bmi >= 0.0035 && bmi <= 0.0040) {
+			let txt = "Din fedmeklasse ligger på Svær fedme. Din BMI'en er " + bmi;
+			window.console.log(txt);
+		} else if (bmi >= 0.0040) {
+			let txt = "Din fedmeklasse ligger på Ekstrem fed. Din BMI'en er " + bmi;
+			window.console.log(txt);
+		}
+	</script>
+</body>
+
+</html>
